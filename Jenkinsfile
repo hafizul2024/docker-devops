@@ -24,13 +24,5 @@ pipeline {
                 '''
             }
         }
-        stage('Deploy') { 
-            steps {
-                sh '''
-                echo 'Docker Deploy Stage'
-                docker run -p 8090:8080 harun-docker-sample.jar
-                '''
-            }
-        }
     }
 }
