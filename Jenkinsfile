@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Code') { 
             steps {
-                sh 'ls -lrt'
+                sh '''
+                echo "this is the fist stage of clonning the code"
+                '''
             }
         }
         stage('App-Build') { 
